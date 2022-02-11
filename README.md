@@ -53,7 +53,7 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://qtycloud.githubaccele
 
 ### 卸载方法：
 ``` Bash
-wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/qtyunblog/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -u
+wget --no-check-certificate -O dnsmasq_sniproxy.sh https://qtycloud.githubaccelerate.workers.dev/https://raw.githubusercontent.com/qtyunblog/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -u
 ```
 
 ### 使用方法：
