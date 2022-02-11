@@ -249,7 +249,7 @@ install_dnsmasq(){
         error_detect_depends "apt-get -y install dnsmasq"
     fi
     [ ! -f /usr/sbin/dnsmasq ] && echo -e "[${red}Error${plain}] 安装dnsmasq出现问题，请检查." && exit 1
-    download /etc/dnsmasq.d/custom_netflix.conf https://qtycloud.githubaccelerate.workers.dev/https://raw.githubusercontent.com/qtyunblog/dnsmasq_sniproxy_install/master/dnsmasq.conf
+    download /etc/dnsmasq.d/custom_netflix.conf https://qtycloud.githubaccelerate.workers.dev/https://raw.githubusercontent.com/qtyunblog/dnsmasq_sniproxy_install/master/Chinese_domain/dnsmasq.conf
     download /tmp/proxy-domains.txt https://qtycloud.githubaccelerate.workers.dev/https://raw.githubusercontent.com/qtyunblog/dnsmasq_sniproxy_install/master/Chinese_domain/proxy-domains.txt
     for domain in $(cat /tmp/proxy-domains.txt); do
         printf "address=/${domain}/${publicip}\n"\
