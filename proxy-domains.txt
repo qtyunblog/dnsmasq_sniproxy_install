@@ -217,3 +217,4 @@ search-api-disney.bamgrid.com
 d9.flashtalking.com
 adobedtm.com
 optimizely.com
+my.freenom.com
