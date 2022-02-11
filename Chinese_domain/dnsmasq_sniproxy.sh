@@ -297,13 +297,13 @@ install_sniproxy(){
         if [ -e sniproxy ]; then
             rm -rf sniproxy
         fi
-        git clone https://qtycloud.githubaccelerate.workers.dev/https://github.com/dlundquist/sniproxy.git
+        git clone https://ghproxy.com/https://github.com/dlundquist/sniproxy.git
         cd sniproxy
     fi
     if check_sys packageManager yum; then
         if [[ ${fastmode} = "1" ]]; then
             if [[ ${bit} = "x86_64" ]]; then
-                download /tmp/sniproxy-0.6.0.el7.x86_64.rpm https://qtycloud.githubaccelerate.workers.dev/https://github.com/qtyunblog/dnsmasq_sniproxy_install/raw/master/sniproxy/sniproxy-0.6.0.el7.x86_64.rpm
+                download /tmp/sniproxy-0.6.0.el7.x86_64.rpm https://ghproxy.com/https://github.com/qtyunblog/dnsmasq_sniproxy_install/raw/master/sniproxy/sniproxy-0.6.0.el7.x86_64.rpm
                 error_detect_depends "yum -y install /tmp/sniproxy-0.6.0.el7.x86_64.rpm"
                 rm -rf /tmp/sniproxy-0.6.0.el7.x86_64.rpm
             else
@@ -323,11 +323,11 @@ install_sniproxy(){
     elif check_sys packageManager apt; then
         if [[ ${fastmode} = "1" ]]; then
             if [[ ${bit} = "x86_64" ]]; then
-                download /tmp/sniproxy_0.6.0_amd64.deb https://qtycloud.githubaccelerate.workers.dev/https://github.com/qtyunblog/dnsmasq_sniproxy_install/raw/master/sniproxy/sniproxy_0.6.0_amd64.deb
+                download /tmp/sniproxy_0.6.0_amd64.deb https://ghproxy.com/https://github.com/qtyunblog/dnsmasq_sniproxy_install/raw/master/sniproxy/sniproxy_0.6.0_amd64.deb
                 error_detect_depends "dpkg -i --no-debsig /tmp/sniproxy_0.6.0_amd64.deb"
                 rm -rf /tmp/sniproxy_0.6.0_amd64.deb
             elif [[ ${bit} = "i386" ]]; then
-                download /tmp/sniproxy_0.6.0_i386.deb https://qtycloud.githubaccelerate.workers.dev/https://github.com/qtyunblog/dnsmasq_sniproxy_install/raw/master/sniproxy/sniproxy_0.6.0_i386.deb
+                download /tmp/sniproxy_0.6.0_i386.deb https://ghproxy.com/https://github.com/qtyunblog/dnsmasq_sniproxy_install/raw/master/sniproxy/sniproxy_0.6.0_i386.deb
                 error_detect_depends "dpkg -i --no-debsig /tmp/sniproxy_0.6.0_i386.deb"
                 rm -rf /tmp/sniproxy_0.6.0_i386.deb
             else
