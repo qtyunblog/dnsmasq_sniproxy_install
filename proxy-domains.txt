@@ -218,3 +218,4 @@ d9.flashtalking.com
 adobedtm.com
 optimizely.com
 my.freenom.com
+www.google.com
