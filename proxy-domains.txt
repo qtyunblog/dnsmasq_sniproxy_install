@@ -1,4 +1,3 @@
-奈飞迪士尼规则域名
 amazon.com
 awsstatic.com
 amazonaws.com
