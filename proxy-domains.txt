@@ -158,5 +158,3 @@ thestationbymaker.com
 thisispolaris.com
 watchdisneyfe.com
 my.freenom.com
-openai.com
-chat.openai.com
